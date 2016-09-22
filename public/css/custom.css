@@ -1,0 +1,56 @@
+/* Landing splash page properties */
+html, body {
+    background-color: #094550;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+/*Fonts for different areas in the app as added by Kizito 20190922*/
+@font-face{ 
+	font-family: 'ExistenceLight';
+	src: url('../fonts/existence_light/existence-light-webfont.eot');
+	src: url('../fonts/existence_light/existence-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/existence_light/existence-light-webfont.woff') format('woff'),
+	     url('../fonts/existence_light/existence-light-webfont.woff2') format('woff2'),
+	     url('../fonts/existence_light/existence-light-webfont.ttf') format('truetype'),
+	     url('../fonts/existence_light/existence-light-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'Sertig';
+	src: url('../fonts/sertig/sertig-webfont.eot');
+	src: url('../fonts/sertig/sertig-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/sertig/sertig-webfont.woff') format('woff'),
+	     url('../fonts/sertig/sertig-webfont.woff2') format('woff2'),
+	     url('../fonts/sertig/sertig-webfont.ttf') format('truetype'),
+	     url('../fonts/sertig/sertig-webfont.svg#webfont') format('svg');
+}
+
+.landing {
+	font-family: 'ExistenceLight', Arial, sans-serif;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #c3c3c3;
+}
+
+.links{
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: #636b6f;
+	font-family: 'ExistenceLight', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
