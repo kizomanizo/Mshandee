@@ -12,13 +12,14 @@
 
     <!-- Styles -->
     <link href="{{ URL::asset('/css/app.css') }}" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/custom_auth.css') }}">
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
