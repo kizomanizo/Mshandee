@@ -130,14 +130,18 @@ h1{
  */
         
 label {
-    font-size:24px;
+    font-size:16px;
     font-family: 'SourceSansProExtraLight', serif;
-    color:#fff;
+    color:#f7f7f7;
+    padding-left: 10px;
     }
     
 .check {
-    font-size:15px;
-    font-family: 'SourceSansProExtraLight', serif;}     
+    font-size:12px;
+    font-family: 'SourceSansProExtraLight', serif;
+    padding-top: 3px;
+    padding-left: 10px;
+}     
 
 /*
  * General Input Style

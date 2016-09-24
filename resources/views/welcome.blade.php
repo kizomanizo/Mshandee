@@ -5,18 +5,21 @@
 <div class="title m-b-md">
     <span class="landing">Mshandee Payroll</span>
 </div>
-
-<div class="links">
-    your down-to-earth payroll system
-</div>
-
 @if (Route::has('login'))
+	<div class="links">
+	{{{ $message or 'An elegant payroll application' }}}
+	</div>
+
     <div class="first-action">
-        <a href="{{ url('/login') }}">Login</a>
+        <a href="{{ url('/login')}}" class="start-text">Login</a>
     </div>
 @else
-    <div class="first-action"> <!-- For picking what to do when the app opens -->
-        <a href="{{ url('/login') }}" class="start-text">Start</a>
+	<div class="links">
+	You need to setup a new account
+	</div>
+
+    <div class="first-action">
+        <a href="{{ url('/register') }}" class="start-text">Create Account</a>
     </div>
 @endif
 

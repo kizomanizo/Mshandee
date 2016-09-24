@@ -31,12 +31,12 @@
 
 @font-face{ 
     font-family: 'SourceSansProRegular';
-    src: url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.eot');
-    src: url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.woff') format('woff'),
-         url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('../fonts/sourcesanspro_extralight/sourcesanspro-regular-webfont.svg#webfont') format('svg');
+    src: url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.svg#webfont') format('svg');
 }
 
 html, body {

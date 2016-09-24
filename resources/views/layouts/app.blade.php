@@ -8,18 +8,18 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Payroll') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="{{ URL::asset('/css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/custom_auth.css') }}">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/custom_auth.css') }}">
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
-
 </head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -36,7 +36,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Payroll') }}
+                    {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
 
@@ -53,6 +53,7 @@
                         <li><a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
                     @else
+                        <li><a href="{{ url('/dashboard') }}">Dashboard</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -81,6 +82,6 @@
     @yield('content')
 
     <!-- Scripts -->
-    <script type=text/javascript src="{{ URL::asset('/js/app.js') }}"></script>
+    <script src="{{ asset ('/js/app.js') }}"></script>
 </body>
 </html>

@@ -1,0 +1,175 @@
+/*Fonts for different areas in the app as added by Kizito 20190923*/
+@font-face{ 
+    font-family: 'ExistenceLight';
+    src: url('../fonts/existence_light/existence-light-webfont.eot');
+    src: url('../fonts/existence_light/existence-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/existence_light/existence-light-webfont.woff') format('woff'),
+         url('../fonts/existence_light/existence-light-webfont.woff2') format('woff2'),
+         url('../fonts/existence_light/existence-light-webfont.ttf') format('truetype'),
+         url('../fonts/existence_light/existence-light-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+    font-family: 'Sertig';
+    src: url('../fonts/sertig/sertig-webfont.eot');
+    src: url('../fonts/sertig/sertig-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sertig/sertig-webfont.woff') format('woff'),
+         url('../fonts/sertig/sertig-webfont.woff2') format('woff2'),
+         url('../fonts/sertig/sertig-webfont.ttf') format('truetype'),
+         url('../fonts/sertig/sertig-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+    font-family: 'SourceSansProExtraLight';
+    src: url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.eot');
+    src: url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro_extralight/sourcesanspro-extralight-webfont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+    font-family: 'SourceSansProRegular';
+    src: url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro_regular/sourcesanspro-regular-webfont.svg#webfont') format('svg');
+}
+
+html, body {
+    background-color: none;
+    /*font-family: 'SourceSansProRegular', sans-serif;*/
+    font-weight: 100;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.sidebar .logo .simple-text {
+	font-family: 'ExistenceLight', sans-serif !important;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #fff !important;
+    text-shadow: 1px 1px 1px #cccccc;
+    letter-spacing: 2px;
+    font-weight: bold !important;
+}
+
+.sidebar[data-color="mshandee"]:after,
+body > .navbar-collapse[data-color="mshandee"]:after {
+  background: #09454f;
+  background: -moz-linear-gradient(top, #09454f 0%, #111c1e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #09454f), color-stop(100%, #111c1e));
+  background: -webkit-linear-gradient(top, #09454f 0%, #111c1e 100%);
+  background: -o-linear-gradient(top, #09454f 0%, #111c1e 100%);
+  background: -ms-linear-gradient(top, #09454f 0%, #111c1e 100%);
+  background: linear-gradient(to bottom, #09454f 0%, #111c1e 100%);
+  background-size: 150% 150%;
+}
+
+.sidebar[data-color="eednahsm"]:after,
+body > .navbar-collapse[data-color="eednahsm"]:after {
+  background: #111c1e;
+  background: -moz-linear-gradient(top, #111c1e 0%, #09454f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #111c1e), color-stop(100%, #09454f));
+  background: -webkit-linear-gradient(top, #111c1e 0%, #09454f 100%);
+  background: -o-linear-gradient(top, #111c1e 0%, #09454f 100%);
+  background: -ms-linear-gradient(top, #111c1e 0%, #09454f 100%);
+  background: linear-gradient(to bottom, #111c1e 0%, #09454f 100%);
+  background-size: 150% 150%;
+}
+
+.navbar-brand {
+    font-weight: 400;
+    margin: 5px 0px;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: #09454f;
+    font-family: 'SourceSansProRegular', Arial, sans-serif !important;
+}
+
+.navbar-nav > li > a {
+    color: #09454f;
+    font-family: 'SourceSansProRegular', Arial, sans-serif !important;
+}
+
+.card .title {
+	font-family: 'SourceSansProRegular', Arial, sans-serif;
+	font-weight: normal;
+	/*text-shadow: 1px 1px 1px #999;*/
+	text-transform: uppercase;
+	font-size: 1.25em;
+}
+
+body, p {
+	font-family: 'SourceSansProRegular', Arial, sans-serif;
+}
+
+.sidebar .nav p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.alert .close ~ span {
+  display: none;
+  max-width: 89%;
+}
+
+.content {
+	font-family: 'SourceSansProRegular', Arial, sans-serif;
+}
+h1, .h1 {
+    font-size: 40px;
+    color: #71bbc7;
+    text-align: center;
+    font-family: 'SourceSansProRegular', Arial, sans-serif;
+}
+
+.card .huge-title {
+    font-family: 'SourceSansProRegular', Arial, sans-serif;
+    font-weight: normal;
+    /* text-shadow: 1px 1px 1px #999; */
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #71bbc7;
+}
+
+.btn-info.btn-fill {
+  color: #FFFFFF;
+  background-color: #71bbc7;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.btn-info.btn-fill:hover, .btn-info.btn-fill:focus, .btn-info.btn-fill:active, .btn-info.btn-fill.active, .open > .btn-info.btn-fill.dropdown-toggle {
+  background-color: #5ba5b1;
+  border-color: #5ba5b1;
+  color: #FFFFFF;
+}
+
+.btn-info {
+  border-color: #71bbc7;
+  color: #1DC7EA;
+}
+
+.form-control {
+	color: #71bbc7;
+	background-color: #FFFFFF;
+	border: 1px solid #d9e8ea;
+	border-radius: 4px;
+	font-size: 1.5em;
+}
+
+.card label {
+	color: #5ba5b1;
+	font-size: 0.9em;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
