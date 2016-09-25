@@ -1,14 +1,27 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="row">
+<div class="row centered">
     <div class="col-md-12">
         <div class="card">
             <div class="header">
                 <h1 class="huge-title">You need to setup a company</h1>
             </div>
             <div class="content">
-                <form role="form" method="POST" action="{{ url('/add_company') }}">
+
+            <!-- Display back errors from validation if present -->
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            <!-- End of error display -->
+
+                <form role="form" method="POST" action="{{ url('/db_addcompany') }}">
                 {{ csrf_field() }}
                     <div class="row">
                         <div class="col-md-12">

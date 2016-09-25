@@ -20,13 +20,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'RouteController@home');
 
-Route::get('/dashboard', function () {
-	return view('dashboard');
+Route::get('/add_company', function () {
+	return view('companies.add_company');
 });
 
-Route::post('/add_company', 'CompanyController@add_company');
+Route::post('/db_addcompany', 'CompanyController@db_addcompany');
 
 Route::get('/test', function () {
 	return view('test');
