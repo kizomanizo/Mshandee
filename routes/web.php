@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+/**
+ * The routes below that point to RouteController do need a lot of variables with them
+ * The variables help in delivering different sidebars and heading to each page.
+ */
 Route::get('/home', 'RouteController@home');
 
 Route::get('/add_company', function () {
@@ -31,3 +35,5 @@ Route::post('/db_addcompany', 'CompanyController@db_addcompany');
 Route::get('/test', function () {
 	return view('test');
 });
+
+Route::get('/companies', 'RouteController@home');

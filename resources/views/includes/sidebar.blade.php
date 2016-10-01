@@ -15,49 +15,64 @@
                 </a>
             </div>
 
-            <ul class="nav">
+            <ul class="nav">                        
                 <li class="active">
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-graph"></i>
-                        <p>Titles</p>
+                        <p>Dashboard</p>
                     </a>
                 </li>
+
+                @if($sidebar['company'] > 0)
                 <li>
-                    <a href="{{ url('/') }}">
+                    <a href="{{ url('/companies') }}">
                         <i class="pe-7s-user"></i>
-                        <p>Departments</p>
+                        <p>Companies</p>
                     </a>
                 </li>
+                @endif
+                @if($sidebar['department'] > 0)
                 <li>
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-note2"></i>
-                        <p>Statutories</p>
+                        <p>Departments</p>
                     </a>
                 </li>
+                @endif
+                @if($sidebar['title'] > 0)
                 <li>
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-news-paper"></i>
-                        <p>Employees</p>
+                        <p>Titles</p>
                     </a>
                 </li>
+                @endif
+                @if($sidebar['employee'] > 0)
                 <li>
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-science"></i>
-                        <p>Salaries</p>
+                        <p>Employees</p>
                     </a>
                 </li>
+                @endif
+                @if($sidebar['deduction'] > 0)
                 <li>
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-map-marker"></i>
-                        <p>Settings</p>
+                        <p>Deductions</p>
                     </a>
                 </li>
+                @endif
+                @if($sidebar['tax'] > 0)
                 <li>
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
+                        <p>Taxes</p>
                     </a>
                 </li>
+                @endif
+
+                <!-- This link always stays on the botom end of the sidebar -->
                 <li class="active-pro">
                     <a href="{{ url('/') }}">
                         <i class="pe-7s-rocket"></i>
